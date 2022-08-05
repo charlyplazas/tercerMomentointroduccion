@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@1,300&display=swap');
+
+body{
+    align-items: center;
+    font-family: 'Roboto Condensed', sans-serif;    
+}
+
+.banner{
+    background-image: url("../img/fondo.png");
+    padding: 25% 29% 22% 6%;
+    background-size: cover;
+    background-position: top center;
+    position: relative;
+    z-index:1;
+}
+
+.banner::after{
+    content: '';
+    height: 100%;
+    width:100%;
+    background-color: black;
+    position:absolute;
+    top:0;
+    left:0;
+    opacity: 0.45;
+    z-index: -1;
+}
