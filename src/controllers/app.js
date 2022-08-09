@@ -260,9 +260,9 @@ function parImpar() {
   let numero = 1;
   for (numero = 1; numero <= 100; numero++) {
     if (numero % 2 == 0) {
-      alert("El " + numero + "es par");
+      console.log("El " + numero + "es par");
     } else {
-      alert("El " + numero + " es impar");
+      console.log("El " + numero + " es impar");
     }
   }
 }
@@ -372,46 +372,18 @@ function incremenrarDos() {
 //**********10**********/
 
 function tecnologias() {
-  let opcion = Number(
-    prompt(
-      "1.Outsourcing\n2.Ciberseguridad\n3.Inteligencia artificial\n4.Big Data\n5.Python\n6.Computación en la nube\n7.node JS\n8.Javascript\n9.React\n10.angular"
-    )
-  );
-  switch (opcion) {
-    case 1:
-      alert("selecionaste Outsourcing");
-      break;
-    case 2:
-      alert("selecionaste Ciberseguridad");
-      break;
-    case 3:
-      alert("selecionaste Inteligencia artificial");
-      break;
-    case 4:
-      alert("selecionaste Big Data");
-      break;
-    case 5:
-      alert("selecionaste Python");
-      break;
-    case 6:
-      alert("selecionaste Computación en la nube");
-      break;
-    case 7:
-      alert("selecionaste node JS");
-      break;
-    case 8:
-      alert("selecionaste Javascript");
-      break;
-    case 9:
-      alert("selecionaste React");
-      break;
-    case 10:
-      alert("selecionaste angular");
-      break;
-
-    default:
-      alert("Error, ingrese un numero entre 1 y 10");
-      break;
+  let repetir = true;
+  while (repetir) {
+    let opcion = Number(
+      prompt(
+        "1.Outsourcing\n2.Ciberseguridad\n3.Inteligencia artificial\n4.Big Data\n5.Python\n6.Computación en la nube\n7.node JS\n8.Javascript\n9.React\n10.angular\n11.Salir"
+      )
+    );
+    switch (opcion) {
+      case 11:
+        repetir = false;
+        break;
+    }
   }
 }
 
